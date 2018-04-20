@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.mat-card-title {
+    text-align: center;
+    background-color: burlywood;
+}
+
+h3 {
+    text-align: center;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    padding-left:5em;
+    text-align: right;
+}

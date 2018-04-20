@@ -1,0 +1,10 @@
+<h3>Upcoming Trips</h3>
+
+<table>
+  <td>
+    <tr *ngFor="let trip of upcomingTrips">
+      <span class="left-align">{{trip.destination}}</span>
+      <span class="right-align">{{trip.daysToGo}}</span> days to go
+    </tr>
+  </td>
+</table>

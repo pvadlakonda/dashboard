@@ -1,0 +1,36 @@
+<div class="demo-grid-list">
+
+  <mat-card>
+    <mat-card-title>{{accountName}} | Adv # {{accountNumber}}</mat-card-title>
+    <mat-card-content>
+      <mat-grid-list [cols]="fixedCols" [rowHeight]="fixedRowHeight" gutterSize="10px" (window:resize)="onResize($event)">
+        <mat-grid-tile colspan=1 rowspan=1 style="background:lightblue">
+          <app-upcomingtrips></app-upcomingtrips>
+        </mat-grid-tile>
+        <mat-grid-tile style="background:lightpink">
+          <app-recenttrips></app-recenttrips>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1" style="background:lightblue">
+          <app-getaways></app-getaways>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1" style="background:lightgreen">
+          <app-visitagain></app-visitagain>
+        </mat-grid-tile>
+        <mat-grid-tile colspan=1 rowspan=1 style="background:lightblue">
+          <app-upcomingtrips></app-upcomingtrips>
+        </mat-grid-tile>
+        <mat-grid-tile style="background:lightpink">
+          <app-recenttrips></app-recenttrips>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1" style="background:lightblue">
+          <app-getaways></app-getaways>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="1" rowspan="1" style="background:lightgreen">
+          <app-visitagain></app-visitagain>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </mat-card-content>
+
+  </mat-card>
+
+</div>
