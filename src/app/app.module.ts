@@ -4,6 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { UpcomingtripsComponent } from './widgets/upcomingtrips/upcomingtrips.component';
@@ -23,6 +25,7 @@ import { UpcomingtripsService } from './services/upcomingtrips.service';
     VisitagainComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatCardModule, MatGridListModule
