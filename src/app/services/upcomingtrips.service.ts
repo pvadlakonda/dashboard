@@ -1,16 +1,16 @@
-import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
 
 @Injectable()
 export class UpcomingtripsService {
 
-  url = 'https://restcountries.eu/rest/v2/name/usa';
+  url = 'https://restcountries.eu/rest/v2/name/canada';
 
   constructor(private http: HttpClient) { }
 
   upcomingTrips = [
     { 'destination': 'Dallas', 'daysToGo': 12 },
-    { 'destination': 'Paris', 'daysToGo': 25 },
+    { 'destination': 'Cancun', 'daysToGo': 25 },
     { 'destination': 'London', 'daysToGo': 45 }
   ]
 
